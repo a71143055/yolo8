@@ -8,4 +8,4 @@ model = YOLO('yolov8n.pt')
 
 if __name__ == '__main__':
     freeze_support()
-    model.predict(data='datasets/data.yaml',source='fire.jpg', save=True, show=True)
+    model.predict(source='fire.jpg', save=True, show=True)
