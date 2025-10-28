@@ -8,4 +8,4 @@ model = YOLO('yolov8m.pt')
 
 if __name__ == '__main__':
     freeze_support()
-    model.train(data='datasets/data.yaml', epoch=10, imgsz=320, device=0)
+    model.train(data='C:/Users/AISW-509-202/IdeaProjects/yolo8/datasets/data.yaml', epochs=10, imgsz=320, device=0, workers=0)

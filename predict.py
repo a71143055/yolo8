@@ -4,4 +4,8 @@ from multiprocessing import freeze_support
 
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
-model = YOLO('runs/detect/predict9/paper.jpg')
+model = YOLO('')
+
+if __name__ == '__main__':
+    freeze_support()
+    model.predict(source='paper.jpg',save=True,show=True)
